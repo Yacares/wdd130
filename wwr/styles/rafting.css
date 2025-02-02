@@ -37,7 +37,7 @@ nav a {
     font-family: var(--font-secondary)
 }
 
-header img{
+header img {
     width: 150px;
     height: auto;
     justify-self: center;
@@ -70,9 +70,28 @@ a :visited {
     text-decoration: none;
 }
 
-main{
+main {
     max-width: 1850px;
     margin: 1rem auto;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    margin: 1rem;
+    border-radius: 10px;
+    color: var(--font-color);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero {
@@ -80,7 +99,7 @@ main{
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    
+
 }
 
 .hero img {
@@ -108,7 +127,7 @@ main{
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .hero p {
@@ -122,10 +141,13 @@ main{
     height: auto;
     border: 0.5rem solid var(--secondary-color);
     border-radius: 5px;
-    float: right; /* Float the image to the right */
-    margin-left: 2px; /* Adds space between the image and the text */
+    float: right;
+    /* Float the image to the right */
+    margin-left: 2px;
+    /* Adds space between the image and the text */
     margin-top: -10px;
-    z-index: 2; /* Ensure the image overlaps the section background */
+    z-index: 2;
+    /* Ensure the image overlaps the section background */
 }
 
 .icons {
@@ -133,85 +155,120 @@ main{
     height: 50px;
 }
 
-.history{
+.history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
-   
+
 }
 
-.history h2{
+.history h2 {
     grid-column: 2;
     align-self: center;
     justify-self: center;
     font-size: 2rem;
 }
 
-.history img{
+.history img {
     grid-row: 2;
     grid-column: 2;
     justify-self: center;
     border-radius: 10px;
 }
 
-.first{
+.first {
     grid-row: 2;
     grid-column: 1;
     justify-self: center;
 }
 
-.second{
+.second {
     grid-row: 2;
     grid-column: 3;
     justify-self: center;
 }
 
-.pictures{
+
+.pictures {
     display: grid;
     width: 100%;
     margin: 1rem auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    /* Create 5 equal columns */
     grid-template-rows: auto 1fr;
+    /* First row for <h2>, second row for images */
+    gap: 1rem;
+    /* Space between items */
 }
 
-.pictures img{
+.pictures h2 {
+    grid-column: 1 / -1;
+    /* Span the entire first row */
+    text-align: center;
+    font-size: 2rem;
+}
+
+.pictures figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.pictures img {
     max-width: 100%;
     height: auto;
 }
 
-.pictures h2{
-    grid-column: 3;
-    align-self: center;
-    justify-self: center;
-    font-size: 2rem;
+.pictures figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
-.r1{
-    grid-row: 2;
+.r1 {
     grid-column: 1;
-    justify-self: center;
+
 }
 
-.r2{
-    grid-row: 2;
+.r2 {
     grid-column: 2;
-    justify-self: center;
+
 }
 
-.r3{
-    grid-row: 2;
+.r3 {
     grid-column: 3;
-    justify-self: center;
+
 }
 
-.r4{
-    grid-row: 2;
+.r4 {
     grid-column: 4;
-    justify-self: center;
+
 }
 
-.r5{
-    grid-row: 2;
+.r5 {
     grid-column: 5;
-    justify-self: center;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.sociallinks a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
 }
