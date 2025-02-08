@@ -53,6 +53,13 @@ h5 {
     padding: 1rem;
 }
 
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+
 p {
     font-family: var(--font-secondary);
     padding: 1rem;
@@ -114,7 +121,6 @@ footer {
     margin-top: 2rem;
     border-radius: 10px;
     color: var(--font-color);
-    font-size: 2.5rem;
     z-index: 1;
 }
 
@@ -166,7 +172,6 @@ footer {
     grid-column: 2;
     align-self: center;
     justify-self: center;
-    font-size: 2rem;
 }
 
 .history img {
@@ -194,18 +199,13 @@ footer {
     width: 100%;
     margin: 1rem auto;
     grid-template-columns: repeat(5, 1fr);
-    /* Create 5 equal columns */
     grid-template-rows: auto 1fr;
-    /* First row for <h2>, second row for images */
     gap: 1rem;
-    /* Space between items */
 }
 
 .pictures h2 {
     grid-column: 1 / -1;
-    /* Span the entire first row */
     text-align: center;
-    font-size: 2rem;
 }
 
 .pictures figure {
@@ -222,8 +222,8 @@ footer {
     height: auto;
 }
 
-.pictures figcaption {
-    background-color: #222;
+figcaption {
+    background-color: var(--accent1-color);
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;

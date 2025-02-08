@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -25,41 +27,86 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/image-5.webp" alt="hero image">
-            <h1>Fantastic Squirt Rafting</h1>
-            <article>
-                <img src="images/image-7.webp" alt="happy familly">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam dignissimos ad numquam nemo tempore, nobis incidunt voluptas qui? Soluta, sunt nihil. Corporis cumque officia, sint omnis eos eum reprehenderit?</p>
-            </article>
-        </div>
-        <section class="history">
-            <h2>History</h2>
-            <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti nobis ad quibusdam similique vitae error? Magni in, necessitatibus itaque, assumenda enim, fuga minus ipsa maiores dolorem saepe molestiae quidem?</p>
-            <img src="images/image-8.webp" alt="history picture">
-            <p class="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus est perferendis, quae magnam error ratione, rerum ullam, delectus vel ipsa provident fuga minus corporis facilis exercitationem possimus. Ab, laboriosam?</p>
+        <section class="employees">
+            <div class="background-container">
+                <img src="images/hero_img.webp" alt="rafting-img">
+            </div>
+            <figure>
+                <img class="emp1" src="images/employee1.webp" alt="employee picture">
+                <figcaption>Josh Dickens our CEO</figcaption>
+            </figure>
+            <figure>
+                <img class="emp2" src="images/employee2.webp" alt="employee picture">
+                <figcaption>Chafens Chafenski our Tour Guide</figcaption>
+            </figure>
+            <figure>
+                <img class="emp3" src="images/employee3.webp" alt="employee picture">
+                <figcaption>Wolter Muzzarrolla our Tour Guide</figcaption>
+            </figure>
         </section>
-        <section class="pictures">
-            <h2>Adventure Awaits You!</h2>
-            <img class="r1" src="images/image-1.webp" alt="raft picture 1">
-            <img class="r2" src="images/image-2.webp" alt="raft picture 2">
-            <img class="r3" src="images/image-3.webp" alt="raft picture 3">
-            <img class="r4" src="images/image-4.webp" alt="raft picture 4">
-            <img class="r5" src="images/image-6.webp" alt="raft picture 5">
+
+        <section class="company-info">
+            <div class="info">
+                <h1>Our Headquarters</h1>
+                <ul>
+                    <h2>Ohio, United States</h2>
+                    <li>123 Random Av.</li>
+                    <li>contact-us@company.com</li>
+                    <li>+1-617-555-0108</li>
+                </ul>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3146790.867729774!2d-84.5311528!3d39.6263492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8835365e062f6c41%3A0xf381e3bc6ee34c9c!2sWhite%20Water%20Adventurers%20Inc!5e0!3m2!1ses-419!2sar!4v1739047240088!5m2!1ses-419!2sar"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
+        <section class="user-forms">
+            <form action="">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <h2>Fill out your details</h2>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                
+                    <p>Purpose of the message:</p>
+                    <label for="General Inquiry">General Inquiry</label>
+                    <input type="radio" name="purpose" id="general" value="general">
+                    <label for="Reservation Question">Female</label>
+                    <input type="radio" name="purpose" id="reservation" value="reservation">
+                    <label for="other">Website Suggestion</label>
+                    <input type="radio" name="purpose" id="suggestion" value="suggestion">
+                
+                    <label for="agreement">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="agreement" name="agreement">
+                    
+                    <label for="message">Your message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
     </main>
 
     <footer>
         <p>© 2025 | Fantastic Squirt Rafting | Lautaro Rodriguez</p>
         <nav class="sociallinks">
-           <a href="#">
-                <img class="icons" src="images/facebook_logo.svg" alt="facebook">
+            <a href="#">
+                <img class="icons" src="images/facebook_logo.png" alt="facebook">
             </a>
             <a href="#">
-                <img class="icons" src="images/instagram_logo.svg" alt="instagram">
+                <img class="icons" src="images/instagram_logo.png" alt="instagram">
             </a>
             <a href="#">
-                <img class="icons" src="images/twitter_logo.svg" alt="twitter">
+                <img class="icons" src="images/twitter_logo.png" alt="twitter">
             </a>
         </nav>
     </footer>
