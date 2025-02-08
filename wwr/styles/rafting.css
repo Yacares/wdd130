@@ -228,6 +228,7 @@ figcaption {
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
+    border-radius: 20px;
 }
 
 .r1 {
@@ -271,4 +272,97 @@ figcaption {
 .icons {
     width: 30px;
     height: 30px;
+}
+
+.employees, .company-info, .user-forms{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.employees{
+    display: grid;
+    grid-template-rows: 2;
+}
+
+.background-container{
+    display: grid;
+    width: 100%;
+}
+
+.background-container{
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.background-container img{
+    width: 100%;
+}
+
+.emp-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    gap: 100px;
+    width: 100%;
+    position: absolute;
+    bottom:  -400px;
+}
+
+.emp-container img{
+    width: 500px;
+    height: 350px;
+    background-color: var(--accent1-color);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.company-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 2rem;
+    gap: 3rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--secondary-color);
+    height: 450px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.info h1{
+    color: white;
+}
+
+.info h2 {
+    margin-bottom: 20px; 
+    font-weight: 400;
+    color: white;
+}
+
+.info ul{
+    list-style: none;
+    padding-left: 0; 
+    color: white;
+    font-family: var(--font-secondary);
+    margin-top: 20px; 
+}
+
+.info li{
+    margin-bottom: 30px;
+}
+
+.map{
+    border: 0;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
 }
