@@ -69,29 +69,38 @@
                 <fieldset>
                     <legend>Contact Information</legend>
 
-                    <h2>Fill out your details</h2>
 
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <div class="input-container">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                   
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                        
+                    <div class="radio-labels-container">
+                        <p class="radio-labels">Purpose of the message:</p>
+                        <input type="radio" name="general inquiry" id="general" value="general">
+                        <label for="general inquiry">General Inquiry</label>
+                        <input type="radio" name="reservation question" id="reservation" value="reservation">
+                        <label for="reservation question">Reservation Question</label>
+                        <input type="radio" name="website suggestion" id="suggestion" value="suggestion">
+                        <label for="website suggestion">Website Suggestion</label>
+                    </div>
+                    
+                    <div class="textbox-container">
+                        <div class="subscribe">
+                            <label for="agreement">Please subscribe me to the monthly newsletter</label>
+                            <input type="checkbox" id="agreement" name="agreement">
+                        </div>
+                        <div class="textbox">
+                            <label for="message">Your message:</label>
+                            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                
-                    <p>Purpose of the message:</p>
-                    <label for="General Inquiry">General Inquiry</label>
-                    <input type="radio" name="purpose" id="general" value="general">
-                    <label for="Reservation Question">Female</label>
-                    <input type="radio" name="purpose" id="reservation" value="reservation">
-                    <label for="other">Website Suggestion</label>
-                    <input type="radio" name="purpose" id="suggestion" value="suggestion">
-                
-                    <label for="agreement">Please subscribe me to the monthly newsletter</label>
-                    <input type="checkbox" id="agreement" name="agreement">
                     
-                    <label for="message">Your message:</label>
-                    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-                    
-                    <button type="submit">Submit</button>
                 </fieldset>
             </form>
         </section>

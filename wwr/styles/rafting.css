@@ -362,7 +362,67 @@ figcaption {
 
 .map{
     border: 0;
-    width: 600px;
+    width: 500px;
     height: 450px;
     border-radius: 10px;
 }
+
+fieldset{
+    height: 400px;
+}
+
+legend{
+    margin-left: 20px;
+    padding: 20px;
+    font-family: var(--font-secondary);
+    font-size: 0.8rem;
+}
+
+.input-container{
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-container label{
+    margin-left: 320px;
+    font-family: var(--font-secondary);
+}
+
+.input-container input{
+    margin-right: 320px;
+    border: 2px solid grey;
+    padding: 5px;
+    font-family: var(--font-secondary);
+}
+
+
+
+.radio-labels-container{
+    font-family: var(--font-secondary);
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.radio-labels-container input{
+    margin-left: 350px;
+}
+
+.textbox-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+
