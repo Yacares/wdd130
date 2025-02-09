@@ -280,7 +280,11 @@ figcaption {
 
 .employees{
     display: grid;
-    grid-template-rows: 2;
+    grid-template-rows: 2fr;
+}
+
+.employees h2{
+    text-align: center;
 }
 
 .background-container{
@@ -451,5 +455,9 @@ button {
 
 button:hover {
     background-color: var(--accent2-color);
-    color: var(white);
+    color: var(--font-color);
+}
+
+.user-forms h2{
+    text-align: center;
 }
