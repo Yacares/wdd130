@@ -368,7 +368,7 @@ figcaption {
 }
 
 fieldset{
-    height: 400px;
+    height: 500px;
 }
 
 legend{
@@ -420,9 +420,36 @@ legend{
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
     margin: 50px;
     justify-content: space-between;
 }
 
+.textbox-container .subscribe{
+    margin-bottom: 15px;
+}
 
+.textbox-container textarea{
+    width: 500px;
+    align-self: center;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    border: 2px solid grey;
+    font-family: var(--font-secondary);
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--font-secondary);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+    color: var(white);
+}
