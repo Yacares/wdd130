@@ -159,7 +159,6 @@ footer nav {
     height: auto;
     border: 5px solid var(--accent2-color);
     border-radius: 10px;
-    margin-left: 1.5rem;
 }
 
 .history {
@@ -341,12 +340,12 @@ footer nav {
 
 .emp-container {
     display: flex;
-    
-    justify-self: center;
+    left: 100px;
     gap: 100px;
     width: 80%;
     position: absolute;
     bottom: -400px;
+    margin-bottom: 100px;
 }
 
 .emp-container img {
