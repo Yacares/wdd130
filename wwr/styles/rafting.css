@@ -150,6 +150,7 @@ footer nav {
     background-color: rgba(0, 0, 0, 0.6);
     color: var(--font-color);
     border-radius: 8px;
+    text-align: center;
     z-index: 1;
 }
 
@@ -257,6 +258,16 @@ footer nav {
     border-radius: 10px;
     margin-bottom: 2rem;
     color: var(--font-color);
+    justify-self: center;
+}
+
+.submit-button{
+    padding: 1rem 1rem;
+    background-color: var(--accent1-color);
+    color: var(--font-color);
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 #newsletter h2 {
@@ -266,9 +277,13 @@ footer nav {
     color: white;
 }
 
+.newsletter-input{
+    height: 30px;
+}
+
 #cta {
     text-align: center;
-    margin-top: 3rem;
+    margin: 3rem;
 }
 
 .cta-button {
@@ -326,9 +341,10 @@ footer nav {
 
 .emp-container {
     display: flex;
-    justify-content: center;
+    
+    justify-self: center;
     gap: 100px;
-    width: 100%;
+    width: 80%;
     position: absolute;
     bottom: -400px;
 }
@@ -446,6 +462,7 @@ legend {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .radio-labels-container input {
@@ -545,3 +562,4 @@ th {
 td {
     background-color: #f9f9f9;
 }
+
